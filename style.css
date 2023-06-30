@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+body {
+    margin: 0;
+    animation: background 8s linear infinite;
+}
+
+.all-wrap {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.logo-wrap {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo:hover {
+    animation: 1s logo linear infinite;
+}
+
+button {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 3vh;
+    font-family: 'Belanosima', sans-serif;
+    box-shadow: 5px 5px rgb(74, 74, 75);
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
+
+.website-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.website-button:hover {
+    animation: button1 2s linear;
+}
+
+.facebook-button {
+    width: 150px;
+    height: 50px;
+}
+
+.facebook-button:hover {
+    animation: button2 1s linear;
+}
+
+.twitter-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+}
+
+.twitter-button:hover {
+    animation: button3 1s linear;
+}
+
+.instagram-button {
+    width: 200px;
+    height: 150px;
+    border-radius: 500px;
+}
+
+.instagram-button:hover {
+    animation: button4 1.5s linear;
+}
+
+
+@keyframes logo {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes button1 {
+    0%, 100% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .4;
+    }
+    75% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes button2 {
+    0%, 100% {
+        text-align: center;
+    }
+    25% {
+        text-align: left;
+    }
+    75% {
+        text-align: right;
+    }
+}
+
+@keyframes button3 {
+    0%, 100% {
+        color: white;
+    }
+    25% {
+        color: blue;
+    }
+    60% {
+        colour: red;
+    }
+}
+
+@keyframes button4 {
+    0%, 100% {
+        font-size: 3vh;
+    }
+    25% {
+        font-size: 4vh;
+    }
+    75% {
+        font-size: 2vh;
+    }
+}
+
+@keyframes background {
+    0%, 100% {
+        background-image: url(Images/cool-background.png);
+    }
+    33% {
+        background-image: url(Images/cool-background1.png);
+    }
+
+    66% {
+        background-image: url(Images/cool-background2.png);
+    }
+}
